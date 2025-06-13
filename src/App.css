@@ -127,7 +127,6 @@
     justify-content: center;
   }
   .carrousel-content {
-    width: 100%;
     min-width: 0;
     max-width: 100%;
     overflow-x: hidden;
@@ -308,7 +307,6 @@ min-width: 850px;
 }
 
 .carrousel-content {
-width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;

@@ -121,7 +121,6 @@ function Carrousel({ children }) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          width: "100%",
           background: "none",
           transition: "none",
         }}
