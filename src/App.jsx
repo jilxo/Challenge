@@ -27,9 +27,9 @@ function App() {
     if (input === 'Aligo{4l1g0R0cks}' || input === 'Aligo{4l1g0R0cks.svg}') {
       setIsHelpOpen(false); // Cierra ayuda si está abierta
       setIsModalOpen(true);
-    }else if (input === '4l1g0R0cks' || input === '4l1g0R0cks.svg') {
+    } else if (input === '4l1g0R0cks' || input === '4l1g0R0cks.svg') {
       alert('Recuerda que el formato es Aligo{Aa-Zz 0-9}');
-    }else {
+    } else {
       alert('Incorrecto. Inténtalo de nuevo.');
     }
   };
@@ -40,7 +40,7 @@ function App() {
       <div className="help">
         <button
           className="help-btn"
-          onClick={() => isHelpOpen? setIsHelpOpen(!isHelpOpen) : setShowHelpConfirm(!showHelpConfirm)}
+          onClick={() => isHelpOpen ? setIsHelpOpen(!isHelpOpen) : setShowHelpConfirm(!showHelpConfirm)}
           aria-label="¿Quieres una pista?"
         >
           ?
@@ -51,10 +51,10 @@ function App() {
           <span>
             <b>¿Estás seguro de que quieres ver la pista?</b>
           </span>
-          <div style={{marginTop: '18px', display: 'flex', gap: '16px'}}>
+          <div style={{ marginTop: '18px', display: 'flex', gap: '16px' }}>
             <button
               className="btn"
-              style={{width: '70px', padding: '8px 0'}}
+              style={{ width: '70px', padding: '8px 0' }}
               onClick={() => {
                 setShowHelpConfirm(false);
                 setIsHelpOpen(true);
@@ -62,7 +62,7 @@ function App() {
             >Sí</button>
             <button
               className="btn"
-              style={{width: '70px', padding: '8px 0', background: '#C90E28'}}
+              style={{ width: '70px', padding: '8px 0', background: '#C90E28' }}
               onClick={() => setShowHelpConfirm(false)}
             >No</button>
           </div>
@@ -77,8 +77,8 @@ function App() {
         <dialog open className="comic-dialog" tabIndex={-1}>
           <span>
             <b>Pista:</b> <br />
-            ¡Las imágenes no son interesantes?.<br />
-            ¿Has intentado inspeccionarlas bien?
+            Entre misiones silenciosas, hay una con tentáculos.<br/>
+            No necesita esconderse... ya dijo lo que tenía que decir.
           </span>
           <button
             className="modal-close"
@@ -118,8 +118,8 @@ function App() {
         </div>
         <Modal isOpen={isModalOpen} onClose={toggleModal}>
           <p>¡Felicidades! Has resuelto el reto y encontrado la secretFlag.</p>
-          <p>Envia tu hoja de vida con el siguiente mensaje:</p>
-          <p>A: </p>
+          <p>Envia tu hoja de vida con el siguiente mensaje en el correo: Ch4ll3ng3 4l1g0R0ck5</p>
+          <p>A: julieth.velasquez@aligo.com.co </p>
           <p>Te esperamos </p>
         </Modal>
       </div>
